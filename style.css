@@ -44,3 +44,22 @@ body {
   top: 212px;
   right: 200px;
 }
+
+/* Notes for the tonnetz grid */
+.note {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom:6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  left: -417px;
+  bottom: 195px;
+}
