@@ -22,8 +22,30 @@ function drawLine(xStart, yStart, xEnd, yEnd) {
   ctx.stroke()
 }
 
+// Define an object for the notes
+function noteCircle(x, y, noteName) {
+  this.x = x;
+  this.y = y;
+  this.noteName = noteName;
+}
+
 // width="700" height="450" by default. Draw isometric grid
+
 for (let i = -9; i < 9; i++) {
   drawLine(0+(75*i),0,canvasWidth,canvasHeight-(50*i));
   drawLine(0+(75*i),canvasHeight,canvasWidth,50*i);
 }
+
+
+var newNote = document.createElement("BUTTON");
+newNote.className = "note";
+newNote.style.position = "relative"
+newNote.onclick = drawLine(0,0,200,200)
+/* Why is this doing it before the button is clicked ???? */
+
+var noteName = document.createTextNode("C");
+newNote.appendChild(noteName);
+
+document.body.appendChild(newNote);
+
+console.log("bsoo")
