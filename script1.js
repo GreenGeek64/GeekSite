@@ -88,6 +88,6 @@ canvas.addEventListener('click', (event) => {
 
   if (circle.clickCircle(x, y)) {
     lineToCursor = true;
-    drawLine(x,y,event.clientX,event.clientY);
+    drawLine(x+,y,rect.left,rect.top);
   }
 } );
